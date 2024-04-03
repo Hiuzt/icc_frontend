@@ -42,6 +42,11 @@ table tbody tr:hover {
     transition: 0.2s;
 }
 
+table tbody tr:last-child:hover {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
 table tbody tr:last-child td {
     border-bottom: hidden;
 }
@@ -53,6 +58,7 @@ table thead th:first-child {
 table thead th:last-child {
     border-top-right-radius: 15px;
 }
+
 
 .user-img {
     width: 52px;
