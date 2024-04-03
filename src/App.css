@@ -42,7 +42,7 @@ table tbody tr:hover {
     transition: 0.2s;
 }
 
-table tbody tr:last-child:hover {
+table tbody tr:last-of-type:hover {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
