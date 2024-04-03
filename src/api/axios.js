@@ -1,6 +1,6 @@
 import axios from "axios"
 
 export default axios.create({
-    baseURL: "https://localhost:7273/api",
+    baseURL: "https://backend20240403160743.azurewebsites.net/api",
     withCredentials: true,
 })
