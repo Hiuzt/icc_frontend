@@ -1,38 +1,392 @@
-.App {
-  text-align: center;
+.table-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table thead {
+    display: table-header-group;
+    vertical-align: middle;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table thead tr {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+table thead th {
+    width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table tbody td {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+table tbody tr:hover {
+    background-color: rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+table tbody tr:last-child td {
+    border-bottom: hidden;
+}
+table thead th:first-child {
+    border-top-left-radius: 15px;
+}
+
+
+table thead th:last-child {
+    border-top-right-radius: 15px;
+}
+
+.user-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.user_col {
+    padding: 5px;
+    display: flex;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.name span:first-child {
+    font-weight: 700;
+}
+
+.name span:nth-child(2) {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.list_length {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.action_col {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.action_col svg {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action_col svg:hover {
+    fill:#4287f5;
+}
+
+.outside_header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
+.outside_header a {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: #4287f5;
+    color: white;
+    margin-bottom: 10px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+
+.outside_header a:hover {
+    background-color: #6b9ff3;
+}
+
+.search {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    height: 40px;
+}
+
+.search svg {
+    width: 16px;
+    fill: white;
+    margin-left: 5px;
+
+}
+
+.search input {
+    all: unset;
+    color: white;
+    padding: 0px 5px
+}
+
+/* CREATE */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a {
+    all: unset;
+    cursor: pointer;
+    color: black;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.back {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.back svg {
+    fill: black;
+    height: 32px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.back:hover svg {
+    fill:#4287f5;
+}
+
+.back:hover a {
+    color: #4287f5;
+}
+
+.container a:hover {
+    color:#4287f5
+}
+
+.create_bg {
+    width: 20%;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.create_header {
+
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.create_content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.form_group {
+    display: flex;
+    flex-direction: column-reverse;
+    /* padding: 10px; */
+    position: relative;
+    
+}
+
+.form_group input {
+    position: relative;
+    all: unset;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+select {
+    all: unset;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.form_group label {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+    transform: translateY(-4px);
+}
+
+input:focus {
+    border-color: #4287f5;
+}
+
+
+
+input:focus ~ label {
+    transform: translateY(-20px);
+    color:#4287f5;
+}
+
+input:valid ~ label {
+    transform: translateY(-20px);
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: #4287f5;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* DELETE */
+.delete_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete_bg {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.delete_header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.delete_content {
+    padding: 10px;
+    text-wrap: wrap;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button:first-child {
+    all: unset;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.buttons button:first-child:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buttons button:nth-child(2) {
+    all: unset;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #4287f5;
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: #4d8ffa;
+}
+
+.base {
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: #4287f5;
+}
+
+.mod {
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: #f5c542;   
+}
+
+.admin {
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: #f54242; 
 }
