@@ -410,4 +410,8 @@ input:valid ~ label {
         display: flex;
         overflow-x: scroll;
     }
+
+    .outside_header {
+        width: 100%;
+    }
 }
