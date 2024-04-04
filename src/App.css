@@ -407,7 +407,7 @@ input:valid ~ label {
 
     .table-container {
         overflow: auto;
-        max-width: auto;
+        max-width: 100vw;
     }
 
     table {
