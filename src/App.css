@@ -405,7 +405,7 @@ input:valid ~ label {
         width: 100%;
     }
 
-    .table {
+    .table-container {
         width: 100%;
         display: flex;
         overflow-x: scroll;
