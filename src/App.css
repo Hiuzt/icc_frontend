@@ -422,6 +422,7 @@ input:valid ~ label {
     }
 
     .table_support {
+        display: block;
         overflow-x: scroll;
     }
 
