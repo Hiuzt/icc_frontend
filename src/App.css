@@ -406,12 +406,14 @@ input:valid ~ label {
     }
 
     .table-container {
-        width: 100%;
-        display: flex;
         overflow-x: scroll;
     }
 
-    .outside_header {
+    table {
         width: 100%;
+    }
+
+    .outside_header {
+        width: 100vw;
     }
 }
