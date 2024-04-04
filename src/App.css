@@ -36,13 +36,12 @@ table tbody td {
 }
 
 
-
 table tbody tr:hover {
     background-color: rgba(0,0,0,0.1);
     transition: 0.2s;
 }
 
-table tbody tr:last-of-type:hover {
+table thead tr:last-child:hover {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -395,4 +394,14 @@ input:valid ~ label {
     border-radius: 10px;
     color: white;
     background-color: #f54242; 
+}
+
+@media only screen and (max-width: 900px) {
+    .create_bg {
+        width: 100%;
+    }
+
+    .back {
+        width: 100%;
+    }
 }
