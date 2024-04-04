@@ -418,4 +418,8 @@ input:valid ~ label {
     .outside_header {
         width: 100vw;
     }
+
+    .delete_bg {
+        width: 90%;
+    }
 }
