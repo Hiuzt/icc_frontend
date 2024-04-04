@@ -397,6 +397,9 @@ input:valid ~ label {
 }
 
 .table_support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
