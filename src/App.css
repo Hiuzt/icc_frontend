@@ -406,13 +406,12 @@ input:valid ~ label {
     }
 
     .table-container {
-        overflow: scroll;
-        max-width: 100vw;
+        overflow: auto;
+        max-width: auto;
     }
 
     table {
-        overflow: scroll;
-        max-width: 100vw;
+        width: 100%;
     }
 
 
