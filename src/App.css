@@ -404,4 +404,10 @@ input:valid ~ label {
     .back {
         width: 100%;
     }
+
+    .table {
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+    }
 }
