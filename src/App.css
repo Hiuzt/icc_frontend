@@ -407,11 +407,9 @@ input:valid ~ label {
 
     .table-container {
         overflow-x: scroll;
+        max-width: 100vw;
     }
 
-    table {
-        width: 100%;
-    }
 
     .outside_header {
         width: 100vw;
