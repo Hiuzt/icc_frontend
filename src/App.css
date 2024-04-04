@@ -396,6 +396,10 @@ input:valid ~ label {
     background-color: #f54242; 
 }
 
+.table_support {
+    width: 100%;
+}
+
 @media only screen and (max-width: 900px) {
     .create_bg {
         width: 100%;
@@ -412,6 +416,10 @@ input:valid ~ label {
 
     table {
         width: 100%;
+    }
+
+    .table_support {
+        overflow-x: scroll;
     }
 
 
